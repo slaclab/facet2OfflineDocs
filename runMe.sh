@@ -1,13 +1,14 @@
+#!/bin/bash
 cd /u/ra/majernik/git/facet2OfflineDocs
 
-wget https://confluence.slac.stanford.edu/spaces/flyingpdf/pdfpageexport.action?pageId=428805488
-mv pdfpageexport.action\?pageId\=428805488 "Outage Recovery.pdf"
+touch /u/ra/majernik/git/facet2OfflineDocs/test
 
-wget https://confluence.slac.stanford.edu/spaces/flyingpdf/pdfpageexport.action?pageId=432642766
-mv pdfpageexport.action\?pageId\=432642766 "Recovery from unplanned power outage.pdf"
+/usr/bin/wget -O "Outage Recovery.pdf" https://confluence.slac.stanford.edu/spaces/flyingpdf/pdfpageexport.action?pageId=428805488
 
-git pull
-git add .
-git commit -m "latest"
-git pull
-git push
+/usr/bin/wget -O "Recovery from unplanned power outage.pdf" https://confluence.slac.stanford.edu/spaces/flyingpdf/pdfpageexport.action?pageId=432642766
+
+/usr/bin/git pull
+/usr/bin/git add .
+/usr/bin/git commit -m "latest"
+/usr/bin/git pull
+/usr/bin/git push
