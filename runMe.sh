@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /u/ra/majernik/git/facet2OfflineDocs
+cd /sdf/home/m/majernik/git/facet2OfflineDocs
 
 /usr/bin/wget -O "Outage Recovery.pdf" https://confluence.slac.stanford.edu/spaces/flyingpdf/pdfpageexport.action?pageId=428805488
 
