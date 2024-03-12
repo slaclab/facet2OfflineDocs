@@ -1,4 +1,5 @@
 #!/bin/bash
+
 cd /u/ra/majernik/git/facet2OfflineDocs
 
 touch /u/ra/majernik/git/facet2OfflineDocs/test
@@ -11,4 +12,4 @@ touch /u/ra/majernik/git/facet2OfflineDocs/test
 /usr/bin/git add .
 /usr/bin/git commit -m "latest"
 /usr/bin/git pull
-/usr/bin/git push
+/usr/bin/git push --force
